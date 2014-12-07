@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bean>
+  <Header>
+    <Name>FreeRTOS_Tasks</Name>
+    <Description />
+    <Author>Omar Isai Pinales Ayala</Author>
+    <Version>01.002</Version>
+    <Icon>DEFAULT</Icon>
+    <TypesFiles>PE,FreeRTOS_Tasks\FreeRTOS_Tasks</TypesFiles>
+    <FileVersion>6</FileVersion>
+  </Header>
+  <Options>
+    <SaveInspectorTabsViewUIStyle>true</SaveInspectorTabsViewUIStyle>
+    <DemoDriver>no</DemoDriver>
+    <Category>Software-User Components</Category>
+    <BeanLevel>Low</BeanLevel>
+    <Copyright>For non-commercial use only.
+(c) Copyright &lt;company/user-name&gt;, 2014
+http://www.&lt;company&gt;.com
+mail: info@&lt;company&gt;.com</Copyright>
+    <BW_HelpType>Default</BW_HelpType>
+    <BW_HelpFiles>,Properties,Methods,Events,"User Types"</BW_HelpFiles>
+  </Options>
+  <PropertyList>
+    <Property>
+      <TCompNameItem>
+        <Name>Component Name</Name>
+        <Symbol>DeviceName</Symbol>
+        <Hint>Name of the component.</Hint>
+        <ItemLevel>BASIC</ItemLevel>
+        <EditLine>true</EditLine>
+        <UI_DisplayIn>TABLE_AND_GRAPHICAL_VIEW</UI_DisplayIn>
+        <UI_DisplayExtraText>DISPLAY_AUTO_POSITION</UI_DisplayExtraText>
+        <UI_StringStyle>EDITBOX</UI_StringStyle>
+        <DefaultValue />
+      </TCompNameItem>
+    </Property>
+    <Property>
+      <TInhrLinkItem>
+        <Name>FreeRTOS</Name>
+        <Symbol>FreeRTOS</Symbol>
+        <TypeSpec>FreeRTOS_Tasks\FreeRTOS</TypeSpec>
+        <Hint>Link to FreeRTOS Erich Styger component.</Hint>
+        <ItemLevel>BASIC</ItemLevel>
+        <EditLine>false</EditLine>
+        <UI_DisplayIn>TABLE_AND_GRAPHICAL_VIEW</UI_DisplayIn>
+        <UI_DisplayExtraText>DISPLAY_AUTO_POSITION</UI_DisplayExtraText>
+        <UI_EnumStyle>COMBO</UI_EnumStyle>
+        <DefaultValue />
+        <CanDelete>false</CanDelete>
+        <IconPopup>false</IconPopup>
+        <SortStyle />
+        <DefaultComponentSubFolder>Referenced_Components</DefaultComponentSubFolder>
+      </TInhrLinkItem>
+    </Property>
+    <Property>
+      <TListItemFromFile>
+        <Name>Number of tasks</Name>
+        <Symbol>nof_tasks</Symbol>
+        <Hint>Number of tasks to generate.</Hint>
+        <ItemLevel>BASIC</ItemLevel>
+        <EditLine>true</EditLine>
+        <UI_DisplayIn>TABLE_AND_GRAPHICAL_VIEW</UI_DisplayIn>
+        <UI_DisplayExtraText>DISPLAY_AUTO_POSITION</UI_DisplayExtraText>
+        <UI_GroupStyle>TABLE</UI_GroupStyle>
+        <UI_DisplayedAtTab>false</UI_DisplayedAtTab>
+        <UI_Layout>DEFAULT</UI_Layout>
+        <UI_NumColumnsInWrappedLayout>4</UI_NumColumnsInWrappedLayout>
+        <UI_TableRowStartIndex>0</UI_TableRowStartIndex>
+        <UI_TableWidthIsFixed>false</UI_TableWidthIsFixed>
+        <Description />
+        <Expanded>Yes</Expanded>
+        <ItemsType>Beans\FreeRTOS_Tasks\taskItem.item</ItemsType>
+        <ItemsTypeChangeAble>false</ItemsTypeChangeAble>
+        <ItemsName />
+        <ItemsNameFrstIndx>0</ItemsNameFrstIndx>
+        <ItemsHint />
+        <ItemsSymb />
+        <ItemsTypeSpec />
+        <MinItems>0</MinItems>
+        <MaxItems>-1</MaxItems>
+        <MinItemsProtected>false</MinItemsProtected>
+      </TListItemFromFile>
+    </Property>
+  </PropertyList>
+  <MethodList>
+    <Method>
+      <TMthdItem>
+        <Name>CreateTasks</Name>
+        <Symbol>CreateTasks</Symbol>
+        <TypeSpec>typeMethod</TypeSpec>
+        <Hint>Initilizes the tasks.</Hint>
+        <ItemLevel>BASIC</ItemLevel>
+        <ReadOnly>true</ReadOnly>
+        <EditLine>false</EditLine>
+        <UI_DisplayIn>TABLE_AND_GRAPHICAL_VIEW</UI_DisplayIn>
+        <UI_DisplayExtraText>DISPLAY_AUTO_POSITION</UI_DisplayExtraText>
+        <UI_BoolStyle>DROPDOWN</UI_BoolStyle>
+        <TypeSpecNameChangeAble>false</TypeSpecNameChangeAble>
+        <DefaultIndex>0</DefaultIndex>
+        <TextValueIndex>false</TextValueIndex>
+        <RuntimeProperty>false</RuntimeProperty>
+        <CanDelete>false</CanDelete>
+        <IconPopup>false</IconPopup>
+        <DefaultValue>true</DefaultValue>
+        <Popup>false</Popup>
+        <PublicMethod>true</PublicMethod>
+        <IsAssembler>false</IsAssembler>
+        <InDefinition>true</InDefinition>
+        <ReturnType>void</ReturnType>
+        <RetHint />
+        <ParamCount>0</ParamCount>
+        <Scope>PRIVATE</Scope>
+      </TMthdItem>
+    </Method>
+  </MethodList>
+  <Links>
+    <EmptySection_DummyValue />
+  </Links>
+  <Revisions>
+    <RevisionVersion>2</RevisionVersion>
+    <Revision>
+      <Date>07-dic-2014</Date>
+      <Version>01.001</Version>
+      <Level />
+      <Author>Auto Generated field</Author>
+      <Verified>Solved some issues</Verified>
+      <Comment>Auto Generated field</Comment>
+    </Revision>
+    <Revision>
+      <Date>07-dic-2014</Date>
+      <Version>01.002</Version>
+      <Level />
+      <Author>Auto Generated field</Author>
+      <Verified>Add auto create task option.</Verified>
+      <Comment>Auto Generated field</Comment>
+    </Revision>
+  </Revisions>
+</Bean>
+
